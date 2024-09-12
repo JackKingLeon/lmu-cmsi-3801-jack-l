@@ -13,7 +13,6 @@ function change(amount)
   return counts
 end
 
--- Write your first then lower case function here
 function first_then_lower_case(strs, fxn)
   for _, str in ipairs(strs) do
     if fxn(str) then
@@ -23,7 +22,6 @@ function first_then_lower_case(strs, fxn)
   return nil
 end
 
--- Write your powers generator here
 function powers_generator(base, limit)
   local power_coroutine = coroutine.create(function ()
     local power = 0
@@ -35,7 +33,6 @@ function powers_generator(base, limit)
   return power_coroutine
 end
 
--- Write your say function here
 function say(words)
   local function inner(word)
     if word == nil then
@@ -47,8 +44,6 @@ function say(words)
   if words == nil then return "" end
   return inner
 end
-
--- Write your line count function here
 
 function meaningful_line_count(file)
   local f = io.open(file, "r")
@@ -68,7 +63,6 @@ function meaningful_line_count(file)
   return #lines
 end
 
--- Write your Quaternion table here
 Quaternion = (function (class, meta, prototype)
   class.new = function (a, b, c, d)
     return setmetatable({a = a, b = b, c = c, d = d}, meta)

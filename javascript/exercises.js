@@ -18,12 +18,10 @@ export function change(amount) {
   return counts
 }
 
-// Write your first then lower case function here
 export function firstThenLowerCase(strs, fxn){
     return strs.find(fxn)?.toLowerCase()
 }
 
-// Write your powers generator here
 export function* powersGenerator(obj){
     let power = 0
     const {ofBase, upTo} = obj
@@ -33,7 +31,6 @@ export function* powersGenerator(obj){
     }
 }
 
-// Write your say function here
 export function say(words){
     function inner(word){
         if (word == undefined){
@@ -48,7 +45,6 @@ export function say(words){
     return inner
 }
 
-// Write your line count function here
 export function meaningfulLineCount(file){
     const fs = require('fs')
 
@@ -70,7 +66,6 @@ export function meaningfulLineCount(file){
     return returnedLines.length
 }
 
-// Write your Quaternion class here
 export class Quaternion{
     constructor(a, b, c, d){
         this.a = a;
